@@ -1,0 +1,13 @@
+add component로 collide 추가
+
+물리 설정하기
+
+1. Transform 을 이용해서 위로 띄워주다
+2. add component > rigid body 검색 > 중력설정
+물리효과를 받기 위한 component임
+3. add component > collide 추가
+collider가 없어도 중력은 받으나, 충돌값이 설정되지 않아 무한시공으로 빠질수 있다
+4. Rigid body > Is Kinematic 외부 물리 충돌 설정이 가능
+5. Material을 설정하면 오브젝트의 재질을 설정할 수 있음 
+Metalic은 금속 재질 수치
+반사도 띄울수 있음
