@@ -11,3 +11,11 @@ collider가 없어도 중력은 받으나, 충돌값이 설정되지 않아 무�
 5. Material을 설정하면 오브젝트의 재질을 설정할 수 있음 
 Metalic은 금속 재질 수치
 반사도 띄울수 있음
+Emission 은 빛을 내는 건 아님
+6. Physics Material은 충돌과 마찰을 컨트롤하는 요소
+Bounciness : 탄성력으로 높을수록 많이 튀어오름
+Bounciness Combine 다음에 나올 탄성값을 구하는 식 > 합산을 최대로 줘라
+Friction 마찰력 : 낮을수록 많이 미끄러짐 static과 Dynamic > 합산을 최소로 줘라 
+
+물체 필수 요소 Mesh Material Collider RigidBody
+하위 속성으로 마찰등을 추가 할 수 있다 
