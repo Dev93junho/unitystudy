@@ -1,0 +1,26 @@
+Rigid Body에만 집중!
+
+rigid.AddForce(Vector3.up * 5, ForceMode.Impulse) // 벡터 힘을 설정해줄 수 있음. 써놓은건 올라갈때의 힘임
+// Mass 무게값ㄹ이 클수록 움직이는데 더 많은 힘이 필요함 
+// 캐릭터의 점프를 이걸로 설정해줄수 있음
+
+if (Input.GetButtonDown("Jump")) {
+    rigid.AddForce(Vector3.up * 25, ForceMode.Impulse);
+    Debug,Log(rigid.velocity)
+
+    Vector3 vec = new Vector3(
+        Input.GetAxisRaw("Horizontal"),0
+        ,Input.GetAxisRaw("Vertical)
+    );
+
+    rigid.AddForce(vec, ForceMode.Impulse);
+}
+
+// 회전력 주기 rotate
+rigid.AddTorque(Vec) : Vec 방향을 축으로 회전이 생김
+
+rigid.AddTorque(Vector3.back); // 뒤로 굴러감 
+rigid.AddTorque(Vector3.up); // 윗방향으로 굴러갈거같지만 Vec을 축으로 돌기 때문에 y축을 삼아 회전함
+rigid.AddTorque(Vector3.down); // up하고 반대방향으로 회전함 
+ 
+
