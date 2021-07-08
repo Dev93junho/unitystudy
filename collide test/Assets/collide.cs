@@ -15,14 +15,14 @@ public class collide : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "dice1") // Ãæµ¹È¿°ú°¡ ÀÏ¾î³¯¶§¸¸
-            mat.color = new Color(0, 0, 0); // °ËÁ¤»öÀÓ 
+        if (collision.gameObject.name == "dice1") // ï¿½æµ¹È¿ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¾î³¯ï¿½ï¿½ï¿½ï¿½
+            mat.color = new Color(0, 0, 0); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "dice2") // Ãæµ¹È¿°ú°¡ ÀÏ¾î³¯¶§¸¸
-            mat.color = new Color(1, 1, 1); // °ËÁ¤»öÀÓ 
+        if (collision.gameObject.name == "dice2") // ï¿½æµ¹È¿ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¾î³¯ï¿½ï¿½ï¿½ï¿½
+            mat.color = new Color(1, 1, 1); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
     }
 
 
