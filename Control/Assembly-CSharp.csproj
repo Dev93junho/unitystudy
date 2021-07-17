@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\GroundController.cs" />
     <Compile Include="Assets\LSController.cs" />
+    <Compile Include="Assets\GameManageLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

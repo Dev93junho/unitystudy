@@ -5,6 +5,9 @@ using UnityEngine;
 public class LSController : MonoBehaviour
 {
     Rigidbody rgd;
+    public int scoreCount;
+    public bool isFalling = false;
+
 
     void Start()
     {

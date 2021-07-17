@@ -1,12 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - GameManageLogic
     - GroundController
     - LSController
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -54,19 +53,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1694}
+      Script: {instanceID: 1696}
     - Class: 114
-      Script: {instanceID: 1944}
+      Script: {instanceID: 1946}
     - Class: 114
-      Script: {instanceID: 2220}
+      Script: {instanceID: 2222}
     - Class: 114
-      Script: {instanceID: 2320}
+      Script: {instanceID: 2322}
     - Class: 114
-      Script: {instanceID: 2464}
+      Script: {instanceID: 2466}
     - Class: 114
-      Script: {instanceID: 2642}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 3704}
+      Script: {instanceID: 3706}
+    - Class: 114
+      Script: {instanceID: 32658}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -482,7 +483,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c29f75a42d5ae83e66fa77a7374e6350
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LSController
@@ -528,6 +529,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManageLogic
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
