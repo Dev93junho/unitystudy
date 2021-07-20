@@ -1,20 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
 public class GameManageLogic : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int totalItemCount;
+    public int stage;
+    public Text stageCountText;
+    public Text playerCountText;
+
+    void Awake()
     {
-        
+        stageCountText.text = "/" + totalItemCount.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GetItem(int count)
     {
-        
+        playerCountText.text = count.ToString(); 
+
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+            SceneManager.LoadScene(stage);
     }
 }
