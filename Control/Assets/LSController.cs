@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LSController : MonoBehaviour
 {
@@ -9,7 +10,6 @@ public class LSController : MonoBehaviour
     public GameManageLogic manager;
     public float jumpPower;
     bool isJump;
-    public int ballCount;
     public float speed;
    
 
@@ -23,7 +23,7 @@ public class LSController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && !isJump)
         {
-            isJump = true;
+            isJump = false;
             rigid.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
         }
     }
@@ -58,32 +58,6 @@ public class LSController : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "ground")
-            isJump = false;
-    }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "ball")
-        {
-            ballCount++;
-            other.gameObject.SetActive(false);
-            manager.GetItem(ballCount);
-        }
 
-        else if (other.tag == "Point")
-        {
-            if (ballCount == manager.totalBallCount)
-            {
-                if (manager.stage == 2)
-                    SceneManager.LoadScene(0);
-                else
-                    SceneManager.LoadScene(manager.stage + 1);
-            }
-            else
-                SceneManager.LoadScene(manager.stage);
-        }
-    }
 }

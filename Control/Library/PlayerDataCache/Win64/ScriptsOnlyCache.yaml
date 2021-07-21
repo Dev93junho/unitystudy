@@ -1,9 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CamManage
     - GameManageLogic
-    - GroundController
     - LSController
+    - ballcounting
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -17,7 +18,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Scene1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -53,21 +54,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1696}
+      Script: {instanceID: 1906}
     - Class: 114
       Script: {instanceID: 1946}
     - Class: 114
-      Script: {instanceID: 2222}
+      Script: {instanceID: 2054}
     - Class: 114
-      Script: {instanceID: 2322}
+      Script: {instanceID: 2224}
     - Class: 114
-      Script: {instanceID: 2466}
+      Script: {instanceID: 2324}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 3706}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 32658}
+      Script: {instanceID: 3708}
+    - Class: 114
+      Script: {instanceID: 3720}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -159,16 +162,16 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GroundController
-  - hash:
-      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 002c1e39ce50872c98b7929e720b47f5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManageLogic
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -187,6 +190,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 66bf9b5b22e04acd33524e44a027923b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ballcounting
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -483,10 +492,16 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: c29f75a42d5ae83e66fa77a7374e6350
+      Hash: 531f91bd4464e9b6201428da8c0f74d5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LSController
+  - hash:
+      serializedVersion: 2
+      Hash: cc03d8a66eab15cd3f6629a9c20479af
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CamManage
   - hash:
       serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
@@ -529,13 +544,7 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManageLogic
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: D:/bulk_ws/unity/unitystudy/Deploy/Control!.exe
+  - Assets/Scenes/Scene1.unity
+  playerPath: D:/bulk_ws/unity/deployset/Control!.exe

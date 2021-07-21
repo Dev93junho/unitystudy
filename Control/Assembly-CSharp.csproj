@@ -47,8 +47,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\GroundController.cs" />
      <Compile Include="Assets\GameManageLogic.cs" />
+     <Compile Include="Assets\ballcounting.cs" />
      <Compile Include="Assets\LSController.cs" />
      <Compile Include="Assets\CamManage.cs" />
  <Reference Include="UnityEngine">
