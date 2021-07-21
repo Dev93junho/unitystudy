@@ -9,7 +9,7 @@ public class LSController : MonoBehaviour
     public GameManageLogic manager;
     public float jumpPower;
     bool isJump;
-    public int itemCount;
+    public int ballCount;
     public float speed;
    
 
@@ -38,22 +38,22 @@ public class LSController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += Vector3.forward * Time.deltaTime * speed;
+            transform.position += Vector3.right * Time.deltaTime * speed;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position += Vector3.back * Time.deltaTime * speed;
+            transform.position += Vector3.left * Time.deltaTime * speed;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.left * Time.deltaTime * speed;
+            transform.position += Vector3.forward * Time.deltaTime * speed;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.right * Time.deltaTime * speed;
+            transform.position += Vector3.back * Time.deltaTime * speed;
         }
 
     }
@@ -68,14 +68,14 @@ public class LSController : MonoBehaviour
     {
         if (other.tag == "ball")
         {
-            itemCount++;
+            ballCount++;
             other.gameObject.SetActive(false);
-            manager.GetItem(itemCount);
+            manager.GetItem(ballCount);
         }
 
         else if (other.tag == "Point")
         {
-            if (itemCount == manager.totalItemCount)
+            if (ballCount == manager.totalBallCount)
             {
                 if (manager.stage == 2)
                     SceneManager.LoadScene(0);
