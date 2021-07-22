@@ -10,11 +10,11 @@ public class GameManageLogic : MonoBehaviour
     // Operating Speed will be better than using Find WithTag
     public int totalBallCount;
     public int Stage;
-    public Text playerCountText;
+    public Text ScoreText;
 
     public void GetItem(int count)
     {
-        playerCountText.text = count.ToString();
+        ScoreText.text = count.ToString();
     }
 
 
@@ -22,8 +22,10 @@ public class GameManageLogic : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Scene1");
+            SceneManager.LoadScene("Stage1");
         }
-    }
 
+
+        
+    }
 }

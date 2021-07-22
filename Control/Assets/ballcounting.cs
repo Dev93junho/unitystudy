@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+
 
 public class ballcounting : MonoBehaviour
 {
@@ -12,7 +12,7 @@ public class ballcounting : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "GameManager") // When "ball" collide to "GameManager" 
+        if (other.gameObject.tag == "ball") // When "ball" collide to "GameManager" 
         {
             ballCount++;
             other.gameObject.SetActive(false);

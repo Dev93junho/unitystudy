@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class LSController : MonoBehaviour
 {
     Rigidbody rigid;
-    public GameManageLogic manager;
     public float jumpPower;
     bool isJump;
     public float speed;
@@ -57,7 +55,5 @@ public class LSController : MonoBehaviour
         }
 
     }
-
-
 
 }
