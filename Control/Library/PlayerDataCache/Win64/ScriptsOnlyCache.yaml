@@ -6,8 +6,6 @@ ScriptsOnlyBuild:
     - GameManageLogic
     - LSController
     - ballcounting
-    Unity.CollabProxy.Editor.dll:
-    - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -44,17 +42,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1478}
+      Script: {instanceID: 1558}
     - Class: 114
-      Script: {instanceID: 1946}
+      Script: {instanceID: 2028}
     - Class: 114
-      Script: {instanceID: 2224}
+      Script: {instanceID: 2306}
     - Class: 114
-      Script: {instanceID: 2324}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2468}
+      Script: {instanceID: 2552}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -107,25 +105,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1906}
+      Script: {instanceID: 1988}
     - Class: 114
-      Script: {instanceID: 1946}
+      Script: {instanceID: 2028}
     - Class: 114
-      Script: {instanceID: 2054}
+      Script: {instanceID: 2136}
     - Class: 114
-      Script: {instanceID: 2224}
+      Script: {instanceID: 2306}
     - Class: 114
-      Script: {instanceID: 2324}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2468}
+      Script: {instanceID: 2552}
     - Class: 114
-      Script: {instanceID: 2610}
+      Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2732}
     - Class: 114
-      Script: {instanceID: 3710}
+      Script: {instanceID: 3796}
     - Class: 114
-      Script: {instanceID: 3722}
+      Script: {instanceID: 3808}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -611,4 +609,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Stage1.unity
   - Assets/Scenes/EndingScene.unity
-  playerPath: D:/bulk_ws/unity/Control/Control!.exe
+  playerPath: C:/Users/jhshi/workspace/Control!.exe

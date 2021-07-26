@@ -34,25 +34,25 @@ public class LSController : MonoBehaviour
 
         rigid.AddForce(vec , ForceMode.Impulse);
 
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.position += Vector3.right * Time.deltaTime * speed;
-        }
+        // if (Input.GetKey(KeyCode.W))
+        // {
+        //     transform.position += Vector3.right * Time.deltaTime * speed;
+        // }
 
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position += Vector3.left * Time.deltaTime * speed;
-        }
+        // if (Input.GetKey(KeyCode.S))
+        // {
+        //     transform.position += Vector3.left * Time.deltaTime * speed;
+        // }
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position += Vector3.forward * Time.deltaTime * speed;
-        }
+        // if (Input.GetKey(KeyCode.A))
+        // {
+        //     transform.position += Vector3.forward * Time.deltaTime * speed;
+        // }
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += Vector3.back * Time.deltaTime * speed;
-        }
+        // if (Input.GetKey(KeyCode.D))
+        // {
+        //     transform.position += Vector3.back * Time.deltaTime * speed;
+        // }
 
     }
 
