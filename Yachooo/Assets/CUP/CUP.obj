@@ -1,4 +1,4 @@
-mtllib CUP.mtl
+mtllib cup.mtl
 g Part 1
 usemtl 0.447059_0.243137_0.000000_0.000000_0.000000
 o mesh0
