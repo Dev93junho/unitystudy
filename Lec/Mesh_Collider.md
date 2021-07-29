@@ -11,4 +11,4 @@
 
 3. Onshape는 model Export시 다양한 확장자로 지원해준다. 그중에 obj형식을 지원해줘 해당 확장자로 다운을 받았고, 실험을 위해 converting 사이트를 통해 fbx형식을 받아 두가지를 모두 이용해 보았다.
 
-4. 
+![models](C:\Users\jhshi\workspace\unitystudy\Yachooo\Assets\dice_and_cup.PNG){: width="100%" height="100%"}
