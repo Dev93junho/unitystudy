@@ -11,4 +11,13 @@
 
 3. Onshape는 model Export시 다양한 확장자로 지원해준다. 그중에 obj형식을 지원해줘 해당 확장자로 다운을 받았고, 실험을 위해 converting 사이트를 통해 fbx형식을 받아 두가지를 모두 이용해 보았다.
 
-![models](C:\Users\jhshi\workspace\unitystudy\Yachooo\Assets\dice_and_cup.PNG)
+![models](./unitystudy/Yachooo/Assets/dice_and_cup.PNG)
+
+#### Mesh Collider
+- Mesh Collider는 box, capsule, Cylinder Collider 처럼 물리 충돌처리를 위한 Component이며, 특히 세밀한 충돌 감지의 경우 사용된다.
+
+- box, capsule, Cylinder 형상으로 정의하기 힘든 경우, Mesh Collider를 사용하면 된다.
+
+- 다만 형상 중 볼록한 부분은 정확히 인식이 가능하나, 오목한 부분은 mesh 인식이 안되는 편이다.
+
+- CPU 부하가 가장 높은 Collider이기 때문에 정말 필요한 경우가 아니면 사용하지 않는 편이다.
