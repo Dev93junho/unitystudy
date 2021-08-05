@@ -13,13 +13,14 @@ public class magicStick : MonoBehaviour
 
     void Start() 
     {
-        prePos = transform.position;    
+        prePos = new Vector3(10f,1000,10f);    
     }
 
     void Update() 
     {
         currentPos = transform.position;
         distance = (currentPos - prePos);
+        prePos = currentPos;
         Velocity = distance / Time.deltaTime;   
     }
 
