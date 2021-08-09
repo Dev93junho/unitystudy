@@ -7,5 +7,5 @@ Please Enjoy!
     2. Deleted Developer Control Mode
 - 2021.07.22 beta version release
 #### Install 
-Go to Release Link, Click the Control.7z
+Go to Release [Link](https://github.com/MinTpie30/unitystudy/releases/tag/Control), Click the Control.7z
 
