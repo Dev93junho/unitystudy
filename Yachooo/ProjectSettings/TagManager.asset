@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - ScoreBoard
+  - cup
+  - dice
   layers:
   - Default
   - TransparentFX
