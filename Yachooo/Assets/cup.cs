@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class cup : MonoBehaviour
 {
-    public Vector3 cupPos;
-
-
-    void Start() 
-    {
-        cupPos = new Vector3(0, 0, 0);
-    }
+    Vector3 target = new Vector3(-2, -32, 72);
 
     private void OnCollisionEnter(Collision other) 
     {
@@ -23,9 +17,11 @@ public class cup : MonoBehaviour
     {
         if (Input.GetKey("p"))
         {
-            cupPos = new Vector3(-5, 0, 0);
+            transform.position = Vector3.MoveTowards(transform.position, target, 0.1f);
         }
-
-        
+        if (Input.GetKey("r"))
+        {
+            transform.rotation = Quaternion.Euler(new Vector3(10,0,0));
+        }
     }
 }
