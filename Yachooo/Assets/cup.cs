@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class cup : MonoBehaviour
 {
-    Vector3 target = new Vector3(-2, 0f, 0);
-    Vector3 rotTarget =  new Vector3(0, 0 ,112f);
+    Vector3 initPos = new Vector3(0, 0f, 0);
+    Vector3 targPos = new Vector3(-1, 0f, 0);
+    float rotationSpeed = 45;
+    Vector3 currentEulerAngles;
+    float x;
+    float y;
+    float z;
+    
 
     private void OnCollisionEnter(Collision other) 
     {
@@ -16,14 +22,23 @@ public class cup : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKey("p"))
+        if (Input.GetKeyDown("p")) z= 1-z;
+
+        //modifying the Vector3, based on input multiplied by speed and time
+        currentEulerAngles += new Vector3(x, y, z) * Time.deltaTime * rotationSpeed;
+
+        //apply the change to the gameObject
+        transform.localEulerAngles = currentEulerAngles;
+
+        void OnCollisionStay(Collision other)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target, 0.03f);
-            Debug.Log("complete move to goal");
-        }
-        if (Input.GetKey("r"))
-        {
-            transform.rotation = Quaternion.Euler(transform.rotation, rotTarget, Time.deltaTime);
+            if (other.gameObject.tag != "dice")
+            {
+                if (Input.GetKeyDown("p")) {
+                    currentEulerAngles -= new Vector3(x, y, z) * Time.deltaTime * rotationSpeed;
+                    transform.localEulerAngles = currentEulerAngles;
+                }
+            }
         }
     }
 }
