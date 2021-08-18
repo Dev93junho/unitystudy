@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class dice : MonoBehaviour
 {
-    MeshRenderer mesh;
-    Material mat;
-    
-    void Start()
-    {
-        mesh = GetComponent<MeshRenderer>();
-        mat = mesh.material;
-    }
+    public GameObject ScoreBoard;
 
-    private void OncollisionEnter(Collision collision) // If collision input
+    void Update()
     {
-    
-    }
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("clicked");
+        }  
 
+        void OnCollisionEnter(Collision other) 
+        {
+            if (other.gameObject.tag == "Ground")
+            {
+                ScoreBoard.gameObject.SetActive(True);
+            }
+            
+        }    
+    }
 }

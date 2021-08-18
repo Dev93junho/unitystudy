@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class ScoreBoard : MonoBehaviour
 {
-    private bool state;
-
-    // ScoreBoard deactivate
-    void Start()
-    {
-        state = false;
-        
-    }
+    public GameObject ScoreBoard;
 
     /* Activate ScoreBoard because of some rules
        How to I scripting source?    
     */
+
+    void Start()
+    {
+        ScoreBoard.gameObject.SetActive(false);
+    }
+
+
     void Update()
     {
-        
+     
     }
+   
+
 }
