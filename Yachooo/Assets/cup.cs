@@ -18,6 +18,7 @@ public class cup : MonoBehaviour
             Debug.Log("Prepared to play!!!");
         }
     }
+    
     void Update()
     {
         if (Input.GetKeyDown("p")) z= 1-z;
@@ -27,7 +28,6 @@ public class cup : MonoBehaviour
 
         //apply the change to the gameObject
         transform.localEulerAngles = currentEulerAngles;
-        
-
+        // initial position, transform Euler를 이용
     }
 }
