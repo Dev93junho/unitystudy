@@ -12,14 +12,5 @@ public class dice : MonoBehaviour
         {
             Debug.Log("clicked");
         }  
-
-        void OnCollisionEnter(Collision other) 
-        {
-            if (other.gameObject.tag == "Ground")
-            {
-                ScoreBoard.gameObject.SetActive(True);
-            }
-            
-        }    
     }
 }

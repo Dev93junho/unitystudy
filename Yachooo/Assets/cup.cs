@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class cup : MonoBehaviour
 {
-    Vector3 initPos = new Vector3(0, 0f, 0);
-    Vector3 targPos = new Vector3(-1, 0f, 0);
     float rotationSpeed = 45;
-    Vector3 currentEulerAngles;
+    public Vector3 currentEulerAngles;
     float x;
     float y;
     float z;
@@ -29,16 +27,7 @@ public class cup : MonoBehaviour
 
         //apply the change to the gameObject
         transform.localEulerAngles = currentEulerAngles;
+        
 
-        void OnCollisionStay(Collision other)
-        {
-            if (other.gameObject.tag != "dice")
-            {
-                if (Input.GetKeyDown("p")) {
-                    currentEulerAngles -= new Vector3(x, y, z) * Time.deltaTime * rotationSpeed;
-                    transform.localEulerAngles = currentEulerAngles;
-                }
-            }
-        }
     }
 }
